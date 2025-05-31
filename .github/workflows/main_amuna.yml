@@ -55,15 +55,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B16731DEF8544C3CBF49BB13D875521A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5E47E8A98E644F119DC046729CD85054 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_27CE89A41B4841AB93E6730D80CBE1F1 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_81D0D597C08349CC841F8D1A25EF6BE3 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_EF702DCEB570441FB0BF36AE5A566BDA }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_75CB0F906DF74434856EF39C8B69000B }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: '.'
+          app-name: 'AMUNA'
           slot-name: 'Production'
           package: .
           
